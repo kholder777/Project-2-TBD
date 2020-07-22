@@ -12,6 +12,12 @@ Welcome to **Project 2!** This is yet another important milestone in your full-s
 TBD
 ```
 
+## MVP
+-
+
+## Nice To Haves 
+-
+
 ## ⚓ Minimum Requirements
 
 - **Application Requirements**
