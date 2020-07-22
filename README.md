@@ -13,10 +13,18 @@ TBD
 ```
 
 ## MVP
--
+
+- Select From Drop down categories of new item
+- Pull Up a grocery list by category and add all it items
+- Easily Add or Remove from Shopping List to Completed(Inventory/ Necessity or User Defined )
+- Timer for Predictably used items
 
 ## Nice To Haves 
--
+
+- Price Checker
+- UPC Scanner
+- Pool Nearby Prices
+- Frequently Bought (Suggested based on frequency) 
 
 ## ⚓ Minimum Requirements
 
