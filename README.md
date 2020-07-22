@@ -2,9 +2,9 @@
   <!-- <div align='center'>
     <img height="32" width="32" style="vertical-align:center;margin:4px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/npm.svg" /img><img  height="32" width="32" padding-left="25px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/visualstudiocode.svg" style="vertical-align:center; margin:5px" </img> </div> -->
 
-## 💡 Project Overview
+<!-- ## 💡 Project Overview
 
-Welcome to **Project 2!** This is yet another important milestone in your full-stack journey: designing and building your first full-stack web application. You and your team will design and build an app using the MVC paradigm and your own server-side API. You will also continue to add to your professional repertoire with testing, continuous integration and linting tools.
+Welcome to **Project 2!** This is yet another important milestone in your full-stack journey: designing and building your first full-stack web application. You and your team will design and build an app using the MVC paradigm and your own server-side API. You will also continue to add to your professional repertoire with testing, continuous integration and linting tools. -->
 
 ## ✨ User Story
 
@@ -14,14 +14,14 @@ I want to keep track of my current home inventory
 So that I can limit my time at the grocery store (Cov-ID)
 ```
 
-## MVP
+## 💡 MVP
 
 - Select From Drop down categories of new item
 - Pull Up a grocery list by category and add all it items
 - Easily Add or Remove from Shopping List to Completed(Inventory/ Necessity or User Defined )
 - Timer for Predictably used items
 
-## Nice To Haves
+## 🔥 Nice To Haves
 
 - Price Checker
 - UPC Scanner
