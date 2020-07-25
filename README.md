@@ -70,11 +70,7 @@ So that I can limit my time at the grocery store (Cov-ID)
 
 - **Visual Representation**:
 
-    <details>
-    <summary>🌟 Wireframes (click to view/collapse)</summary>
-    1 of 1
-    <img src="./Assets/schema.png">
-    </details>
+https://app.diagrams.net/#G1pxLffhZrdVFDFv_tM3yQgvTuE-X6R3as
 
 ## 📦 Setup and Instructions
 
