@@ -69,8 +69,11 @@ So that I can limit my time at the grocery store (Cov-ID)
   - Links to to the deployed application and the GitHub repository
 
 - **Visual Representation**:
-
-https://app.diagrams.net/#G1pxLffhZrdVFDFv_tM3yQgvTuE-X6R3as
+    <details>
+    <summary>🌟 WireFrame Diagram (click to view/collapse)</summary>
+    1 of 1
+    <img src="Assets/Project2_callbackCats.PNG">
+    </details>
 
 ## 📦 Setup and Instructions
 
