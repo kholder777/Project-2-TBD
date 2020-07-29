@@ -92,7 +92,7 @@ So that I can easily add them to my grocery list
     <details>
     <summary>🌟 Components Diagram (click to view/collapse)</summary>
     4 of 4
-    <img src="Assets/ImgSchema.png">
+    <img src="Assets/ImgComponents.png">
     </details>
 
 ## 📦 Setup and Instructions
