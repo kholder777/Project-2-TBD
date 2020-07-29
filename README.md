@@ -10,8 +10,13 @@ Welcome to **Project 2!** This is yet another important milestone in your full-s
 
 ```
 As a Shopper
-I want to keep track of my current home inventory
-So that I can limit my time at the grocery store (Cov-ID)
+I want to keep an ongoing grocery list
+So that I can shop efficiently
+
+As a Frequent Shopper
+I want to keep a list of my favorite items
+So that I can easily add them to my grocery list
+
 ```
 
 ## 💡 MVP
