@@ -77,7 +77,7 @@ So that I can limit my time at the grocery store (Cov-ID)
 
 ## 📦 Setup and Instructions
 
-- TBD [LiveLink](deployed Heroku link).
+- [LiveLink](https://bagit-and-tagit.herokuapp.com/)
 
 ### Tools & Packages
 
