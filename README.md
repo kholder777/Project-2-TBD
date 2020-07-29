@@ -73,27 +73,28 @@ So that I can easily add them to my grocery list
 
   - Links to to the deployed application and the GitHub repository
 
-- **Visuals & Diagrams**:
-    <details>
-    <summary>🌟 WireFrame Diagram (click to view/collapse)</summary>
-    1 of 4
-    <img src="Assets/Project2_callbackCats.PNG">
-    </details>
-    <details>
-   <summary>🌟 Swimlane Diagram (click to view/collapse)</summary>
-    2 of 4
-    <img src="Assets/ImgSwimLine.png">
-    </details>
-    <details>
-    <summary>🌟 Database Schema Diagram (click to view/collapse)</summary>
-    3 of 4
-    <img src="Assets/ImgSchema.png">
-    </details>
-    <details>
-    <summary>🌟 Components Diagram (click to view/collapse)</summary>
-    4 of 4
-    <img src="Assets/ImgComponents.png">
-    </details>
+## 🌟 Visuals & Diagrams:
+
+<details>
+<summary>WireFrame Diagram (click to view/collapse)</summary>
+1 of 4
+<img src="Assets/Project2_callbackCats.PNG">
+</details>
+<details>
+<summary>Swimlane Diagram (click to view/collapse)</summary>
+2 of 4
+<img src="Assets/ImgSwimLine.png">
+</details>
+<details>
+<summary>Database Schema Diagram (click to view/collapse)</summary>
+3 of 4
+<img src="Assets/ImgSchema.png">
+</details>
+<details>
+<summary>Components Diagram (click to view/collapse)</summary>
+4 of 4
+<img src="Assets/ImgComponents.png">
+</details>
 
 ## 📦 Setup and Instructions
 
