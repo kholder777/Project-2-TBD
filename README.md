@@ -102,13 +102,13 @@ So that I can easily add them to my grocery list
 
 ### Tools & Packages
 
-> - Used [Express](https://expressjs.com/) Express is a minimal and flexible Node.js web application framework.
+> Used [Express](https://expressjs.com/) Express is a minimal and flexible Node.js web application framework.
 >
-> - Used [MySQL](https://www.npmjs.com/package/mysql) NPM package to connect to your MySQL database and perform queries.
+> Used [MySQL](https://www.npmjs.com/package/mysql) NPM package to connect to your MySQL database and perform queries.
 >
-> - Used [Sequelize](https://sequelize.org/) Promise-based Node.js ORM for Postgres, MySQL.
+> Used [Sequelize](https://sequelize.org/) Promise-based Node.js ORM for Postgres, MySQL.
 >
-> - Used [React.js](https://reactjs.org/) Open-source JavaScript library for building user interfaces.
+> Used [React.js](https://reactjs.org/) Open-source JavaScript library for building user interfaces.
 
 ## 📽️ The following animation demonstrates the application's functionality:
 
