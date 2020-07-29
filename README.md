@@ -73,7 +73,7 @@ So that I can easily add them to my grocery list
 
   - Links to to the deployed application and the GitHub repository
 
-- **Visuals & App Diagrams**:
+- **Visuals & Diagrams**:
     <details>
     <summary>🌟 WireFrame Diagram (click to view/collapse)</summary>
     1 of 4
