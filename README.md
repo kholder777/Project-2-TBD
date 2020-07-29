@@ -97,7 +97,7 @@ So that I can easily add them to my grocery list
 
 ## 📦 Setup and Instructions
 
-- [LiveLink](https://bagit-and-tagit.herokuapp.com/)
+- [BagIt](https://bagit-and-tagit.herokuapp.com/)(LiveLink)
 
 ### Tools & Packages
 
