@@ -1,7 +1,9 @@
-const router = require('express').Router();
-const burgerRoutes = require('./burger');
-const employeeRoutes = require('./employees');
+// change to connect to current/fav list
+
+const router = require("express").Router();
+const currentListRoutes = require("./currentList");
+const favListRoutes = require("./favList");
 // Book routes
-router.use('/burger', burgerRoutes);
-router.use('/employees', employeeRoutes);
+router.use("/currentList", currentListRoutes);
+router.use("/favList", favListRoutes);
 module.exports = router;

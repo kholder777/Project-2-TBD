@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "password",
-    "database": "project_setup",
+    "database": "bagIt_DB",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
