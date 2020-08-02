@@ -1,83 +1,88 @@
-const router = require('express').Router();
-var db = require('../../models');
+const router = require("express").Router();
+var db = require("../../models");
 // get route -> index
-router.get('/', function (req, res) {
+router.get("/", function (req, res) {
   //do things here for other routes
 });
 
 // get route, edited to match sequelize
-router.get('/burgers', function (req, res) {
+router.get("/currentList", function (req, res) {
   // replace old function with sequelize function
-  db.Burger.findAll({
-    // Here we specify we want to return our burgers in ordered by ascending burger_name
-    order: [['burger_name', 'ASC']],
-  })
-    // use promise method to pass the burgers...
-    .then(function (dbBurger) {
+  db.items
+    .findAll({
+      // Here we specify we want to return our currentList in ordered by ascendin'item_name
+      order: ["item_name", "ASC"],
+    })
+    // use promise method to pass the currentList...
+    .then(function (dbitems) {
       // into the main index, updating the page
-      console.log(dbBurger);
-      var hbsObject = {
-        burger: dbBurger,
+      console.log(dbitems);
+      var dbitems = {
+        items: dbitems,
       };
       //I'M NOT USING HANDLEBARS! WE CANT USE THIS.
       // return res.render('index', hbsObject);
-      return res.json(dbBurger);
+      return res.json(dbitems);
     });
 });
 
-// post route to create burgers
-router.post('/burgers/create', function (req, res) {
-  // edited burger create to add in a burger_name
-  db.Burger.create({
-    burger_name: req.body.burger_name,
-  })
-    // pass the result of our call
-    .then(function (dbBurger) {
-      // log the result to our terminal/bash window
-      console.log(dbBurger);
-      // redirect
-      res.redirect('/');
-    });
-});
-
-// put route to devour a burger
-router.put('/burgers/update', function (req, res) {
-  // If we are given a customer, create the customer and give them this devoured burger
-  if (req.body.customer) {
-    db.Customer.create({
-      customer: req.body.customer,
-      BurgerId: req.body.burger_id,
+// post route to create currentList
+router.post("/currentList/create", function (req, res) {
+  // edited items create to add in 'item_name
+  db.items
+    .create({
+      item_name: req.bod.item_name,
     })
-      .then(function (dbCustomer) {
-        return db.Burger.update(
+    // pass the result of our call
+    .then(function (dbitems) {
+      // log the result to our terminal/bash window
+      console.log(dbitems);
+      // redirect
+      res.redirect("/");
+    });
+});
+
+// put route to devour a items
+router.put("/currentList/update", function (req, res) {
+  // If we are given a user, create the user and give them this devoured items
+  if (req.body.user) {
+    db.user
+      .create({
+        user: req.body.user,
+        itemsId: req.body.item_id,
+      })
+      .then(function (dbuser) {
+        return db.items.update(
           {
             devoured: true,
           },
           {
             where: {
-              id: req.body.burger_id,
+              id: req.body.item_id,
             },
-          },
+          }
         );
       })
-      .then(function (dbBurger) {
-        res.json('/');
+      .then(function (dbitems) {
+        res.json("/");
       });
   }
-  // If we aren't given a customer, just update the burger to be devoured
+  // If we aren't given a user, just update the items to be devoured
   else {
-    db.Burger.update(
-      {
-        devoured: true,
-      },
-      {
-        where: {
-          id: req.body.burger_id,
+    db.items
+      .update(
+        {
+          devoured: true,
         },
-      },
-    ).then(function (dbBurger) {
-      res.json('/');
-    });
+        {
+          where: {
+            id: req.body.item_id,
+          },
+        }
+      )
+      .then(function (dbitems) {
+        res.json("/");
+      });
   }
 });
 
