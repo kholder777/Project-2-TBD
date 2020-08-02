@@ -1,14 +1,14 @@
-// Customer model
+// User model
 
-// The Customer has a "customer" attribute of type DataTypes.String
+// The User has a "user" attribute of type DataTypes.String
 
-module.exports = function(sequelize, DataTypes) {
-  var Customer = sequelize.define("Customer", {
-    customer: {
+module.exports = function (sequelize, DataTypes) {
+  var User = sequelize.define("user", {
+    user: {
       type: DataTypes.STRING,
-      // If a customer is to be created, they must have a name
-      allowNull: false
-    }
+      // If a user is to be created, they must have a name
+      allowNull: false,
+    },
   });
-  return Customer;
+  return User;
 };
