@@ -22,22 +22,24 @@ module.exports = function (sequelize, DataTypes) {
 			type: DataTypes.BOOLEAN,
 			defaultValue: false,
 		},
-		catID: {
-			type: sequelize.INTEGER,
-			references: {
-				model: Category,
-				key: "id",
-				deferrable: sequelize.Deferrable.INITIALLY_IMMEDIATE,
-			},
-		},
-		userID: {
-			type: sequelize.INTEGER,
-			references: {
-				model: user,
-				key: "id",
-				deferrable: sequelize.Deferrable.INITIALLY_IMMEDIATE,
-			},
-		},
 	});
+	items.associate = function (models) {
+		// We're saying that a items should belong to an Category
+		// A items can't be created without an Category due to the foreign key constraint
+		items.belongsTo(models.Category, {
+			foreignKey: {
+				allowNull: false,
+			},
+		});
+	};
+	items.associate = function (models) {
+		// We're saying that a items should belong to an User
+		// A items can't be created without an User due to the foreign key constraint
+		items.belongsTo(models.User, {
+			foreignKey: {
+				allowNull: false,
+			},
+		});
+	};
 	return items;
 };

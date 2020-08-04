@@ -12,5 +12,13 @@ module.exports = function (sequelize, DataTypes) {
 			autoIncrement: true,
 		},
 	});
+
+	Category.associate = function (models) {
+		// Associating Category with items
+		Category.hasMany(models.items, {
+			onDelete: "cascade",
+		});
+	};
+
 	return Category;
 };
