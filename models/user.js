@@ -4,9 +4,9 @@
 
 module.exports = function (sequelize, DataTypes) {
   var User = sequelize.define(
-    "user",
+    "User",
     {
-      user: {
+      user_name: {
         type: DataTypes.STRING,
         // If a user is to be created, they must have a name
         allowNull: false,
