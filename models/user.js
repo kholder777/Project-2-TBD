@@ -3,23 +3,22 @@
 // The User has a "user" attribute of type DataTypes.String
 
 module.exports = function (sequelize, DataTypes) {
-	var User = sequelize.define("user", {
-		user: {
-			type: DataTypes.STRING,
-			// If a user is to be created, they must have a name
-			allowNull: false,
-		},
-		userID: {
-			type: DataTypes.INTEGER,
-			primaryKey: true,
-			autoIncrement: true,
-		},
-	});
-	User.associate = function (models) {
-		// Associating User with items
-		User.hasMany(models.items, {
-			onDelete: "cascade",
-		});
-	};
-	return User;
+  var User = sequelize.define(
+    "User",
+    {
+      user_name: {
+        type: DataTypes.STRING,
+        // If a user is to be created, they must have a name
+        allowNull: false,
+      },
+    },
+    { freezeTableName: true }
+  );
+  User.associate = function (models) {
+    // Associating User with items
+    User.hasMany(models.items, {
+      onDelete: "cascade",
+    });
+  };
+  return User;
 };
