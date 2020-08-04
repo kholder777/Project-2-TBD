@@ -26,7 +26,7 @@ module.exports = function (sequelize, DataTypes) {
 	items.associate = function (models) {
 		// We're saying that a items should belong to an Category
 		// A items can't be created without an Category due to the foreign key constraint
-		items.belongsTo(models.Category, {
+		items.belongsTo(models.category, {
 			foreignKey: {
 				allowNull: false,
 			},

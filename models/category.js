@@ -1,8 +1,8 @@
 //creating category table.
 
 module.exports = function (sequelize, DataTypes) {
-	var Category = sequelize.define("Category", {
-		Category_name: {
+	var category = sequelize.define("category", {
+		category_name: {
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
@@ -13,12 +13,12 @@ module.exports = function (sequelize, DataTypes) {
 		},
 	});
 
-	Category.associate = function (models) {
+	category.associate = function (models) {
 		// Associating Category with items
-		Category.hasMany(models.items, {
+		category.hasMany(models.items, {
 			onDelete: "cascade",
 		});
 	};
 
-	return Category;
+	return category;
 };
