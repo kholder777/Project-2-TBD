@@ -1,10 +1,16 @@
+body {
+	background-color: darkgray;
+	color: white;
+	text-align: center;
+}
+
 .form {
-  margin: 20px;
+	margin: 20px;
 }
 
 .form input {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 100%;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
 }
