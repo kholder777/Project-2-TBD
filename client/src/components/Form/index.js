@@ -3,8 +3,8 @@
 
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
 import "./style.css";
 
 class Form extends Component {
@@ -40,11 +40,11 @@ class Form extends Component {
       <div>
         <Container>
           <Navbar fixed="top" expand="lg" variant="dark" bg="dark">
-            <Navbar.Brand href="#">Navbar</Navbar.Brand>
+            <Navbar.Brand href="#">Welcome to BagIt:</Navbar.Brand>
           </Navbar>
         </Container>
-        <p>Hello {this.state.userName}</p>
-        <form className="form">
+        <h1>Enter a usrename below to get your shopping list started</h1>
+        <form padding-top="100px" className="form">
           <input
             value={this.state.userName}
             name="userName"

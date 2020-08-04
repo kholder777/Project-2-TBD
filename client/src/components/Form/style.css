@@ -1,16 +1,25 @@
 body {
-	background-color: darkgray;
-	color: white;
-	text-align: center;
+  background-color: rgb(84, 84, 84);
+  color: white;
+  text-align: center;
 }
-
+button {
+  background-color: black;
+  color: white;
+}
+h1 {
+  font-size: 5px;
+}
 .form {
-	margin: 20px;
+  margin: 20px;
+  padding-top: 50px;
+  color: white;
 }
-
 .form input {
-	display: block;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	width: 100%;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  background-color: rgb(70, 69, 69);
+  color: white;
 }
