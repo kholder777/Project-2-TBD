@@ -28,6 +28,7 @@ CREATE TABLE category
       (30) NOT NULL,
   active BOOLEAN,
   fav BOOLEAN,
+shopped BOOLEAN,
   catID INT NOT NULL,
      FOREIGN KEY
       (catID)
