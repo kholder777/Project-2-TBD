@@ -13,6 +13,10 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
     },
+    shopped: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
     fav: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
