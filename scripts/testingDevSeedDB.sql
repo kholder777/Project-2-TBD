@@ -1,8 +1,19 @@
 -- Set the DB
 USE bagit_DB;
+
+-- Set default values for date fields 
+ALTER TABLE `Category` MODIFY COLUMN `createdAt` DATETIME NOT NULL DEFAULT NOW();
+ALTER TABLE `Category` MODIFY COLUMN `updatedAt` DATETIME NOT NULL DEFAULT NOW() ON UPDATE NOW();
+
+ALTER TABLE `items` MODIFY COLUMN `createdAt` DATETIME NOT NULL DEFAULT NOW();
+ALTER TABLE `items` MODIFY COLUMN `updatedAt` DATETIME NOT NULL DEFAULT NOW() ON UPDATE NOW();
+
+ALTER TABLE `User` MODIFY COLUMN `createdAt` DATETIME NOT NULL DEFAULT NOW();
+ALTER TABLE `User` MODIFY COLUMN `updatedAt` DATETIME NOT NULL DEFAULT NOW() ON UPDATE NOW();
+
 -- Populate users
-INSERT INTO user
-    (id,name)
+INSERT INTO User
+    (id, user_name)
 VALUES
     (1, 'Sam'),
     (2, 'Harry P'),
@@ -10,9 +21,9 @@ VALUES
     (4, 'Voldamort'),
     (5, 'Melkor');
 
--- Populate Roles 
-INSERT INTO category
-    (id,name)
+-- Populate categories 
+INSERT INTO Category
+    (id,category_name)
 VALUES
     (1, 'Bread'),
     (2, 'Meat'),
@@ -26,7 +37,6 @@ VALUES
     (10, 'Wine and Beer'),
     (11, 'Hygiene'),
     (12, 'Household Items'),
-    (12, 'Bathroom'),
     (13, 'Laundry'),
     (14, 'Baby Stuff'),
     (15, 'Cosmetics'),
@@ -39,16 +49,16 @@ VALUES
     (22, 'Cleaning Products'),
     (23, 'Deli'),
     (24, 'General'),
-    (25, 'Uncategorized')
+    (25, 'Bathroom'),
+    (26, 'Uncategorized')
 ;
 
--- Populate Employees
-
+-- Populate items
 INSERT INTO items
-    (id,name,active,fav,catID,userID)
+    (id,items_name,active,shopped,fav,CategoryId,UserId)
 VALUES
-    (001, 'Toothpaste', true, true, 1, 1),
-    (002, 'Butter Beer', true, true, 10, 2),
-    (003, 'Brisket', true, false, 2, 3),
-    (004, 'Beef Jerky', false, false, 8, 4),
-    (005, 'Yeast', false, true, 7, 4);
+    (1, 'Toothpaste', true, true, false, 1, 1),
+    (2, 'Butter Beer', true, true, true, 10, 2),
+    (3, 'Brisket', true, false, false, 2, 3),
+    (4, 'Beef Jerky', false, false, false, 8, 4),
+    (5, 'Yeast', false, true, true, 7, 4);
