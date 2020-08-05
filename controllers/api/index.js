@@ -3,9 +3,9 @@
 const router = require("express").Router();
 const currentListRoutes = require("./currentList");
 const favListRoutes = require("./favList");
-// const categoriesRoutes = require("./category");
+const userRoutes = require("./user");
 // Book routes
 router.use("/currentList", currentListRoutes);
 router.use("/favList", favListRoutes);
-// router.use("/category", categoriesRoutes);
+router.use("/user", userRoutes);
 module.exports = router;
