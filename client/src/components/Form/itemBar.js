@@ -19,6 +19,7 @@ class ItemBar extends React.Component {
                 />
               </Col>
               <Col>
+                {/* maybe need to use dbitems? */}
                 <h3>{props.items}</h3>
               </Col>
               <Col>
