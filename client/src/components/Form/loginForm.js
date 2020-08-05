@@ -27,7 +27,7 @@ class LoginForm extends React.Component {
 						<Form.Label>User Name</Form.Label>
 						<Form.Control type="user" placeholder="Enter User" />
 						<Form.Text className="text-muted">
-							We'll never share your User with anyone else.
+							{/* We'll never share your User with anyone else. */}
 						</Form.Text>
 					</Form.Group>
 
