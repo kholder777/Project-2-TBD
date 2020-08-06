@@ -5,9 +5,12 @@ import { Container } from "react-bootstrap";
 function Department() {
 	const array = [1, 2, 3];
 	return (
-		<Container>
+		<Container id="departmentContainer">
+			Department Name here!
+			{/* needs to know based on what the user picks in the drop down */}
+			{/* {DepartmentName} here... with hook? */}
 			{array.map((item) => {
-				return <ItemBar number={item} />;
+				return <ItemBar />;
 			})}
 		</Container>
 	);

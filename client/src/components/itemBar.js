@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import { Col, Button } from "react-bootstrap";
 function ItemBar(props) {
 	return (
-		<Form>
+		<Form id="ItemBar">
 			{props.number}
 			{["radio"].map((type) => (
 				<div key={`inline-${type}`} className="mb-3">
@@ -31,6 +31,7 @@ function ItemBar(props) {
 								id={`inline-${type}-2`}
 							/>
 							<Button>
+								{/* when clicked, selected item must be copied to fav list and also button color must change to yellow. */}
 								<svg
 									width="3em"
 									height="3em"
