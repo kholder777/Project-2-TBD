@@ -11,7 +11,7 @@ function HomePage() {
 
 	return (
 		<div>
-			{/* <NavBar /> */}
+			<NavBar />
 			<AddBar />
 			{/* //map this department */}
 			{array.map((DeptArray) => {
