@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "273b3d8f-00d9-4194-9c98-5473bef8541b",
+		"name": "BagIt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ActiveItems Dev",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BagItAPILocal}}items/active",
+					"host": [
+						"{{BagItAPILocal}}items"
+					],
+					"path": [
+						"active"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InactiveItems Dev",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BagItAPILocal}}items/inactive",
+					"host": [
+						"{{BagItAPILocal}}items"
+					],
+					"path": [
+						"inactive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllItems Dev",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BagItAPILocal}}items/all",
+					"host": [
+						"{{BagItAPILocal}}items"
+					],
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
