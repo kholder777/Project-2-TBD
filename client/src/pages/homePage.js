@@ -3,7 +3,6 @@ import React from "react";
 import AddBar from "../components/AddBar";
 import NavBar from "../components/navBar";
 import Department from "../components/department";
-import ItemBar from "../components/itemBar";
 
 function HomePage() {
 	//if LoginForm is filled out and true, proceed to homePage.js
