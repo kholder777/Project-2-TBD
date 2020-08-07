@@ -12,9 +12,9 @@ function HomePage() {
       <LoginButton />
       <AddBar />
       {/* //map this department */}
-      {/* {array.map((DeptArray) => {
+      {array.map((DeptArray) => {
         return <Department number={DeptArray} />;
-      })} */}
+      })}
       {/* Array of departments. Map departments too. Look into props.*/}
     </div>
   );

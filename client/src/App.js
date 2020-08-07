@@ -1,9 +1,13 @@
 // src/App.js
 import React from "react";
-import LoginButton from "./components/loginButton";
+import HomePage from "./pages/homePage";
 
 function App() {
-  return <LoginButton />;
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
 }
 
 export default App;
