@@ -2,7 +2,7 @@ const router = require("express").Router();
 var db = require("../../models");
 
 // get route, edited to match sequelize
-router.get("/usernames", function (req, res) {
+router.get("/items", function (req, res) {
 	// replace old function with sequelize function
 	db.User.findAll({})
 		// use promise method to pass the userlist...
