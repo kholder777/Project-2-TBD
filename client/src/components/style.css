@@ -4,6 +4,16 @@ body {
   text-align: center;
 }
 
+/*header color*/
+.mr-auto {
+  background-color: darkslateblue;
+}
+
+.app-logo {
+  color: rgb(84, 84, 84);
+
+}
+
 button {
   background-color: black;
   color: white;
