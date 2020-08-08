@@ -19,8 +19,8 @@ const App = () => {
 			<NavBar />
 			<Container className="flex-grow-1 mt-5">
 				<Switch>
-					<PrivateRuate path="/" exact component={Currentlist} />
-					{/* <Route path="/" exact component={Home} /> */}
+					{/* <PrivateRuate path="/" exact component={Currentlist} /> */}
+					<Route path="/" exact component={Home} />
 					<PrivateRuate path="/profile" component={Profile} />
 					<Route path="/external-api" component={ExternalApi} />
 					<PrivateRuate path="/currentlist" component={Currentlist} />
