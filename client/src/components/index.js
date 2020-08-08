@@ -10,6 +10,6 @@ import Highlight from "./highlight";
 import Content from "./content";
 import Footer from "./footer";
 import Hero from "./hero";
+import PrivateRuate from "./private-route";
 
-export default { Content, Footer, Hero, Loading, NavBar, Highlight };
-export { Content, Footer, Hero, Loading, NavBar, Highlight };
+export { Content, Footer, Hero, Loading, NavBar, Highlight, PrivateRuate };
