@@ -1,17 +1,3 @@
-// // src/App.js
-// import React from "react";
-// import HomePage from "./views/home";
-
-// function App() {
-// 	return (
-// 		<div>
-// 			<HomePage />
-// 		</div>
-// 	);
-// }
-
-// export default App;
-
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Container } from "react-bootstrap";
@@ -45,3 +31,17 @@ const App = () => {
 };
 
 export default App;
+
+// // src/App.js
+// import React from "react";
+// import HomePage from "./views/home";
+
+// function App() {
+// 	return (
+// 		<div>
+// 			<HomePage />
+// 		</div>
+// 	);
+// }
+
+// export default App;
