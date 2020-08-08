@@ -1,6 +1,8 @@
 import React from "react";
-import Department from "../components/department";
+// import Department from "../components/department";
 import AddBar from "../components/AddBar";
+import NavBar from "../components/navBar";
+import Department from "../components/department";
 
 function HomePage() {
 	//if LoginForm is filled out and true, proceed to homePage.js
@@ -8,6 +10,7 @@ function HomePage() {
 
 	return (
 		<div>
+			<NavBar />
 			<AddBar />
 			{/* //map this department */}
 			{array.map((DeptArray) => {
