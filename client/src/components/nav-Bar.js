@@ -7,14 +7,14 @@ import LoginButton from "./loginButton";
 
 const MainNav = () => (
 	<Nav className="mr-auto">
-		<Nav.Link
+		{/* <Nav.Link
 			as={RouterNavLink}
 			to="/"
 			exact
 			activeClassName="router-link-exact-active"
 		>
 			Home
-		</Nav.Link>
+		</Nav.Link> */}
 		<Nav.Link
 			as={RouterNavLink}
 			to="/profile"
