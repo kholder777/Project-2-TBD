@@ -11,7 +11,7 @@ body {
   border-radius: 0.5rem;
   border-color: darkgray;
   border-width: 5rem;
-  margin: 20px;
+  margin: auto;
   padding: 20px;
 }
 #ItemBar {
