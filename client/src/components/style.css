@@ -22,8 +22,20 @@ body {
 div.row {
   text-align: center;
   justify-content: center;
+  align-items: center;
   align-content: space-around;
 }
 .form-control {
   margin-bottom: 20px;
+}
+
+.favButton {
+  background: rgb(142, 142, 142);
+  border-color: rgb(142, 142, 142);
+}
+
+.bi-star {
+  width: 1em;
+  height: 1em;
+  fill: white;
 }
