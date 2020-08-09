@@ -26,13 +26,15 @@
 // export default Home;
 
 import React, { Fragment } from "react";
-
-import { Hero } from "../components";
+import { NavBar, Hero } from "../components";
 
 const Home = () => (
-	<Fragment>
-		<Hero />
-	</Fragment>
+  <div>
+    <NavBar />
+    <Fragment>
+      <Hero />
+    </Fragment>
+  </div>
 );
 
 export default Home;
