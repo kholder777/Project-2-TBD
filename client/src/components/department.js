@@ -15,7 +15,7 @@ function Department() {
 
 	return (
 		<Container id="departmentContainer">
-			Department Name here!
+			<h4>Department Name here!</h4>
 			{/* needs to know based on what the user picks in the drop down */}
 			{/* {DepartmentName} here... with hook? */}
 			{array.map((item) => {
