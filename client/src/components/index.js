@@ -7,7 +7,7 @@ import "./style.css";
 import Loading from "./loading";
 import NavBar from "./nav-Bar";
 import Highlight from "./highlight";
-import Footer from "./footer";
+// import Footer from "./footer";
 import Hero from "./hero";
 import PrivateRoute from "./private-route";
 
