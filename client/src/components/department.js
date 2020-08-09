@@ -3,24 +3,21 @@ import "./style.css";
 import API from "../utils/API";
 import ItemBar from "./itemBar";
 import { Container } from "react-bootstrap";
-
+import items from "../utils/API";
 function Department() {
-	var itemsArray = [];
-	const array = [1, 2, 3];
-	const [result] = useState(0);
+	const [result, setResult] = useState([{ id: 1, items_name: "toothpaste" }]);
 	useEffect(() => {
 		API.getAllItems()
-			.then((res) => itemsArray.push(res.data.items))
+			.then((res) => setResult(res.data.items))
 			.catch((err) => console.log(err));
-	}, [result]);
-	console.log(itemsArray);
+	}, []);
 	return (
 		<Container id="departmentContainer">
 			<h4>Department Name here!</h4>
 			{/* needs to know based on what the user picks in the drop down */}
 			{/* {DepartmentName} here... with hook? */}
-			{array.map((item) => {
-				return <ItemBar />;
+			{result.map((currentItem) => {
+				return <ItemBar number={currentItem.id} />;
 			})}
 		</Container>
 	);
