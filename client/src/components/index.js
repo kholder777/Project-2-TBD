@@ -11,4 +11,4 @@ import Footer from "./footer";
 import Hero from "./hero";
 import PrivateRoute from "./private-route";
 
-export { Footer, Hero, Loading, NavBar, Highlight, PrivateRoute };
+export { Hero, Loading, NavBar, Highlight, PrivateRoute };
