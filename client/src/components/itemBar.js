@@ -3,10 +3,10 @@ import "./style.css";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import { Col, Button } from "react-bootstrap";
-function ItemBar(props) {
+function ItemBar(items) {
   return (
     <Form id="ItemBar">
-      {props.number}
+      {items.number}
       {["checkbox"].map((type) => (
         <div key={`inline-${type}`} className="mb-3">
           <Row>
