@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import { NavBar, Footer, Loading, PrivateRoute } from "./components";
+import { NavBar, Loading, PrivateRoute } from "./components";
 import { Home, Profile, ExternalApi, Currentlist } from "./views";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./app.css";
@@ -24,7 +24,6 @@ const App = () => {
           <PrivateRoute path="/currentlist" component={Currentlist} />
         </Switch>
       </Container>
-      {/* <Footer /> */}
     </div>
   );
 };
