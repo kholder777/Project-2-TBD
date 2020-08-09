@@ -6,8 +6,8 @@ import LogoutButton from "./logoutButton";
 import LoginButton from "./loginButton";
 
 const MainNav = () => (
-	<Nav className="mr-auto">
-		{/* <Nav.Link
+  <Nav className="mr-auto">
+    {/* <Nav.Link
       as={RouterNavLink}
       to="/"
       exact
@@ -31,29 +31,29 @@ const MainNav = () => (
     >
       External API
     </Nav.Link> */}
-	</Nav>
+  </Nav>
 );
 
 const AuthNav = () => {
-	const { isAuthenticated } = useAuth0();
+  const { isAuthenticated } = useAuth0();
 
-	return (
-		<Nav className="justify-content-end">
-			{isAuthenticated ? <LogoutButton /> : <LoginButton />}
-		</Nav>
-	);
+  return (
+    <Nav className="justify-content-end">
+      {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+    </Nav>
+  );
 };
 
 const NavBar = () => {
-	return (
-		<Navbar bg="light" expand="md">
-			<Container>
-				<Navbar.Brand as={RouterNavLink} className="logo" to="/" />
-				<MainNav />
-				<AuthNav />
-			</Container>
-		</Navbar>
-	);
+  return (
+    <Navbar bg="dark" expand="md">
+      <Container>
+        <Navbar.Brand as={RouterNavLink} className="logo" to="/" />
+        <MainNav />
+        <AuthNav />
+      </Container>
+    </Navbar>
+  );
 };
 
 export default NavBar;

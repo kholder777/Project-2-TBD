@@ -26,15 +26,23 @@
 // export default Home;
 
 import React, { Fragment } from "react";
-import { NavBar, Hero } from "../components";
+import { Hero } from "../components";
+import { NavBar, Footer, Loading, PrivateRoute } from "../components";
+import { useAuth0 } from "@auth0/auth0-react";
+import LoginButton from "../components/loginButton";
 
-const Home = () => (
-  <div>
-    <NavBar />
-    <Fragment>
-      <Hero />
-    </Fragment>
-  </div>
-);
+const Home = () => {
+  const { isLoading } = useAuth0();
+  if (isLoading) {
+    return <Loading />;
+  }
+  return (
+    <div>
+      <Fragment>
+        <Hero />
+      </Fragment>
+    </div>
+  );
+};
 
 export default Home;
