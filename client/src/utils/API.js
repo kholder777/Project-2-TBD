@@ -4,7 +4,7 @@ import axios from "axios";
 
 export default {
 	getAllItems: function () {
-		return axios.get("https://bagit-and-tagit.herokuapp.com//api/items/all");
+		return axios.get("https://bagit-and-tagit.herokuapp.com/api/items/all");
 	},
 	getAllCategories: function () {
 		return axios.get(
