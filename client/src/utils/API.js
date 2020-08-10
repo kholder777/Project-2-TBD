@@ -6,17 +6,11 @@ export default {
 	getAllItems: function () {
 		return axios.get("https://bagit-and-tagit.herokuapp.com//api/items/all");
 	},
-};
-
-export default {
 	getAllCategories: function () {
 		return axios.get(
 			"https://bagit-and-tagit.herokuapp.com/api/categories/all"
 		);
 	},
-};
-
-export default {
 	postNewUser: function (requestBody, config) {
 		return axios.post(
 			"https://bagit-and-tagit.herokuapp.com/api/users/create",
