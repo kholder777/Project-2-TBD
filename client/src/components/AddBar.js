@@ -15,6 +15,9 @@ function AddBar(props) {
         value={props.item}
         onChange={props.changeText}
       />
+      <Button id="addItemButt" onClick={props.handleSave}>
+        Add Item
+      </Button>
 
       <select
         name="dropDownValue"
@@ -32,8 +35,6 @@ function AddBar(props) {
             })
           : ""}
       </select>
-      {/* move button */}
-      <Button onClick={props.handleSave}>Add Item</Button>
     </header>
   );
 }
