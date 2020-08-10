@@ -17,7 +17,7 @@ export default {
 };
 
 export default {
-	postNewUser: function () {
+	postNewUser: function (requestBody, config) {
 		return axios.post(
 			"https://bagit-and-tagit.herokuapp.com/api/users/create",
 			requestBody,
