@@ -2,8 +2,14 @@
 
 const router = require("express").Router();
 const currentListRoutes = require("./currentList");
-const userRoutes = require("./items");
+const itemRoutes = require("./items");
+const userRoutes = require("./users");
+const categoryRoutes = require("./categories");
+
 // Book routes
 router.use("/currentList", currentListRoutes);
-router.use("/items", userRoutes);
+router.use("/items", itemRoutes);
+router.use("/users", userRoutes);
+router.use("/categories", categoryRoutes);
+
 module.exports = router;
