@@ -105,6 +105,10 @@ So that I can shop efficiently
 > Used [Sequelize](https://sequelize.org/) Promise-based Node.js ORM for Postgres, MySQL.
 >
 > Used [React.js](https://reactjs.org/) Open-source JavaScript library for building user interfaces.
+>
+> Used [React Bootstrap](https://react-bootstrap.github.io/) Open-source JavaScript library for customizing React.
+>
+> Used [Auth0](https://auth0.com/) A secure login platform.
 
 ## 📽️ The following animation demonstrates the application's functionality:
 
