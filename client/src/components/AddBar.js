@@ -27,7 +27,7 @@ function AddBar(props) {
             ? props.categories.map((category) => {
                 return (
                   <option key={category.id}>
-                    {category.id + " " + category.category_name}
+                    {category.id + ". " + category.category_name}
                   </option>
                 );
               })
