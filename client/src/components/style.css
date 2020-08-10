@@ -30,14 +30,3 @@ div.row {
 .form-control {
   margin-bottom: 20px;
 }
-
-.favButton {
-  background: rgb(142, 142, 142);
-  border-color: rgb(142, 142, 142);
-}
-
-.bi-star {
-  width: 1em;
-  height: 1em;
-  fill: white;
-}
