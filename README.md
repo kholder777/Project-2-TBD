@@ -112,7 +112,7 @@ So that I can shop efficiently
 
 ## 📽️ The following animation demonstrates the application's functionality:
 
-![Employee Tracker](Assets/employee-tracker.gif)
+![Employee Tracker](Assets/BagItDemo.gif)
 
 ## <img src="Assets/settings.gif" width="30px"> Contributor(s)
 
