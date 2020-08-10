@@ -19,8 +19,8 @@ router.post("/create", function (req, res) {
 	// replace old function with sequelize function
 	db.User.create(
 		{
-			// user_name: req.body.user_name,
-			user_name: "TestIt",
+			user_name: req.body.user_name,
+			// user_name: "TestIt",
 		},
 		{ fields: ["user_name"] }
 	).then(function (response) {
