@@ -6,14 +6,14 @@
 	},
 	"item": [
 		{
-			"name": "ActiveItems Dev",
+			"name": "ActiveItems",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BagItAPILocal}}items/active",
+					"raw": "{{BagItURL}}items/active",
 					"host": [
-						"{{BagItAPILocal}}items"
+						"{{BagItURL}}items"
 					],
 					"path": [
 						"active"
@@ -23,14 +23,14 @@
 			"response": []
 		},
 		{
-			"name": "InactiveItems Dev",
+			"name": "InactiveItems",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BagItAPILocal}}items/inactive",
+					"raw": "{{BagItURL}}items/inactive",
 					"host": [
-						"{{BagItAPILocal}}items"
+						"{{BagItURL}}items"
 					],
 					"path": [
 						"inactive"
@@ -40,14 +40,14 @@
 			"response": []
 		},
 		{
-			"name": "AllItems Dev",
+			"name": "AllItems",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BagItAPILocal}}items/all",
+					"raw": "{{BagItURL}}items/all",
 					"host": [
-						"{{BagItAPILocal}}items"
+						"{{BagItURL}}items"
 					],
 					"path": [
 						"all"
@@ -55,6 +55,103 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "AllCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BagItURL}}categories/all",
+					"host": [
+						"{{BagItURL}}categories"
+					],
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BagItURL}}users/all",
+					"host": [
+						"{{BagItURL}}users"
+					],
+					"path": [
+						"all"
+					],
+					"query": [
+						{
+							"key": "user_name",
+							"value": "Sam",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_name",
+							"value": "Testuser{{I}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BagItURL}}users/create",
+					"host": [
+						"{{BagItURL}}users"
+					],
+					"path": [
+						"create"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "889aa599-4ec8-4ff8-8d43-4a16fc12c300",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5beefbdc-028b-4ce1-a38f-4568629b9d51",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	],
 	"protocolProfileBehavior": {}
