@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import { Col } from "react-bootstrap";
 function ItemBar(props) {
   return (
-    <Form id="ItemBar">
+    <Form className="itemBar">
       {["checkbox"].map((type) => (
         <Row className="mb-3" key={`inline-${type}`}>
           <Form.Check
