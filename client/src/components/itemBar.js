@@ -7,19 +7,17 @@ function ItemBar(props) {
   return (
     <Form id="ItemBar">
       {["checkbox"].map((type) => (
-        <div key={`inline-${type}`} className="mb-3">
-          <Row>
-            <Form.Check
-              className="checkBox"
-              inline
-              type={type}
-              id={`inline-${type}-1`}
-            />
-            <Col>
-              <p className="indItem">{props.itemName}</p>
-            </Col>
-          </Row>
-        </div>
+        <Row className="mb-3" key={`inline-${type}`}>
+          <Form.Check
+            className="checkBox"
+            inline
+            type={type}
+            key={`inline-${type}-1`}
+          />
+          <Col>
+            <p className="indItem">{props.itemName}</p>
+          </Col>
+        </Row>
       ))}
     </Form>
   );
