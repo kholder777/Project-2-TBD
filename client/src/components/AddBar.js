@@ -1,19 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import Form from "react-bootstrap/Form";
+import { Form, Button } from "react-bootstrap";
 
-function AddBar() {
-	return (
-		<header>
-			<Form.Control type="text" placeholder="Add Item" />
-		</header>
-	);
-	//use state hook to keep track of value in input and use it!
-	// (use effect hook as well as some others cases)
+function AddBar(props) {
+  const [dropdownOpen, setOpen] = useState(false);
+
+  const toggle = () => setOpen(!dropdownOpen);
+  return (
+    <header>
+      <Form.Control
+        type="text"
+        placeholder="Add Item"
+        name="item"
+        value={props.item}
+        onChange={props.changeText}
+      />
+
+      <select
+        name="dropDownValue"
+        id="dropDown"
+        value={props.dropDownValue}
+        onChange={props.changeValue}
+      >
+        {props.categories.length > 0
+          ? props.categories.map((category) => {
+              return (
+                <option key={category.id}>
+                  {category.id + " " + category.category_name}
+                </option>
+              );
+            })
+          : ""}
+      </select>
+      {/* move button */}
+      <Button onClick={props.handleSave}>Add Item</Button>
+    </header>
+  );
 }
-// drop down to grab categories from table when they add item
-export default AddBar;
 
-// class component is good for managing state
-// function component used for presentation purposes mostly.
-// function component use HOOKS.
+export default AddBar;
