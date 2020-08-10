@@ -18,7 +18,7 @@ function Department() {
       {/* {DepartmentName} here... with hook? */}
       {result.map((currentItem) => {
         return (
-          <ItemBar number={currentItem.id} itemName={currentItem.items_name} />
+          <ItemBar key={currentItem.id} itemName={currentItem.items_name} />
         );
       })}
     </Container>
