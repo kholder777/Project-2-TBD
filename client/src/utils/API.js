@@ -4,6 +4,24 @@ import axios from "axios";
 
 export default {
 	getAllItems: function () {
-		return axios.get("http://localhost:3000/api/items/all");
+		return axios.get("https://bagit-and-tagit.herokuapp.com//api/items/all");
+	},
+};
+
+export default {
+	getAllCategories: function () {
+		return axios.get(
+			"https://bagit-and-tagit.herokuapp.com/api/categories/all"
+		);
+	},
+};
+
+export default {
+	postNewUser: function () {
+		return axios.post(
+			"https://bagit-and-tagit.herokuapp.com/api/users/create",
+			requestBody,
+			config
+		);
 	},
 };
