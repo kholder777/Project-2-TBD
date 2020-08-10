@@ -39,7 +39,7 @@ function Currentlist() {
     };
     API.createItem(newItem).then((results) => {
       console.log(results);
-      window.location.reload(<ItemBar />);
+      window.location.reload();
     });
   };
   return (
