@@ -13,10 +13,6 @@ As a Shopper
 I want to keep an ongoing grocery list
 So that I can shop efficiently
 
-As a Frequent Shopper
-I want to keep a list of my favorite items
-So that I can easily add them to my grocery list
-
 ```
 
 ## 💡 MVP
@@ -24,7 +20,6 @@ So that I can easily add them to my grocery list
 - Select From Drop down categories of new item
 - Pull Up a grocery list by category and add all it items
 - Easily Add or Remove from Shopping List to Completed(Inventory/ Necessity or User Defined )
-- Timer for Predictably used items
 
 ## 🔥 Nice To Haves
 
@@ -32,6 +27,7 @@ So that I can easily add them to my grocery list
 - UPC Scanner
 - Pool Nearby Prices
 - Frequently Bought (Suggested based on frequency)
+- Timer for Predictably used items
 
 ## ⚓ Minimum Requirements
 
@@ -109,6 +105,10 @@ So that I can easily add them to my grocery list
 > Used [Sequelize](https://sequelize.org/) Promise-based Node.js ORM for Postgres, MySQL.
 >
 > Used [React.js](https://reactjs.org/) Open-source JavaScript library for building user interfaces.
+>
+> Used [React Bootstrap](https://react-bootstrap.github.io/) Open-source JavaScript library for customizing React.
+>
+> Used [Auth0](https://auth0.com/) A secure login platform.
 
 ## 📽️ The following animation demonstrates the application's functionality:
 
