@@ -16,6 +16,9 @@ body {
   margin-bottom: 20px;
   padding: 20px;
 }
+#addItem {
+  margin: 10px;
+}
 .itemBar {
   color: black;
   border-radius: 0.5em;
@@ -34,8 +37,4 @@ div.row {
 }
 .indItem {
   margin: auto;
-}
-.addItemButt {
-}
-.dropDown {
 }

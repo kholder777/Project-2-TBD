@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./style.css";
 import { Form, Button } from "react-bootstrap";
+import "./style.css";
 
 function AddBar(props) {
   const [dropdownOpen, setOpen] = useState(false);
@@ -34,7 +34,7 @@ function AddBar(props) {
             : ""}
         </select>
       </header>
-      <Button id="addItemButt" onClick={props.handleSave}>
+      <Button id="addItem" onClick={props.handleSave}>
         Add Item
       </Button>
     </div>
