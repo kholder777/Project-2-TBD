@@ -15,4 +15,24 @@ router.get("/all", function (req, res) {
 		});
 });
 
+router.post("/create", function (req, res) {
+	// replace old function with sequelize function
+	db.User.create(
+		{
+			// user_name: req.body.user_name,
+			user_name: "TestIt",
+		},
+		{ fields: ["user_name"] }
+	).then(function (response) {
+		// into the main index, updating the page
+
+		// var dbusers = {
+		// 	users: dbusers,
+		// };
+		return res.json(response);
+	});
+	// let's assume the default of isAdmin is false
+	console.log(req); // 'alice123'
+});
+
 module.exports = router;
