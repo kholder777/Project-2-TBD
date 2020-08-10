@@ -16,7 +16,7 @@ body {
   margin-bottom: 20px;
   padding: 20px;
 }
-#ItemBar {
+.itemBar {
   color: black;
   border-radius: 0.5em;
   background-color: rgb(142, 142, 142);
