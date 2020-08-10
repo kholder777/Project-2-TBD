@@ -6,7 +6,7 @@ import Auth0ProviderWithHistory from "../auth0-provider-with-history";
 
 function Currentlist() {
 	//if LoginForm is filled out and true, proceed to homePage.js
-	const array = [1, 2, 3];
+	const array = [1];
 
 	return (
 		<div>

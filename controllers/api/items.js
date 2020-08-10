@@ -13,7 +13,7 @@ router.get("/active", function (req, res) {
 		// use promise method to pass the userlist...
 		.then(function (dbitems) {
 			// into the main index, updating the page
-			console.log(dbitems);
+
 			var dbitems = {
 				items: dbitems,
 			};
@@ -32,7 +32,7 @@ router.get("/inactive", function (req, res) {
 		// use promise method to pass the userlist...
 		.then(function (dbitems) {
 			// into the main index, updating the page
-			console.log(dbitems);
+
 			var dbitems = {
 				items: dbitems,
 			};
@@ -47,7 +47,7 @@ router.get("/all", function (req, res) {
 		// use promise method to pass the userlist...
 		.then(function (dbitems) {
 			// into the main index, updating the page
-			console.log(dbitems);
+
 			var dbitems = {
 				items: dbitems,
 			};
@@ -66,7 +66,7 @@ router.get("/fav", function (req, res) {
 		// use promise method to pass the userlist...
 		.then(function (dbitems) {
 			// into the main index, updating the page
-			console.log(dbitems);
+
 			var dbitems = {
 				items: dbitems,
 			};
