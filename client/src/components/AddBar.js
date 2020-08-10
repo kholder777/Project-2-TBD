@@ -7,35 +7,37 @@ function AddBar(props) {
 
   const toggle = () => setOpen(!dropdownOpen);
   return (
-    <header>
-      <Form.Control
-        type="text"
-        placeholder="Add Item"
-        name="item"
-        value={props.item}
-        onChange={props.changeText}
-      />
+    <div>
+      <header>
+        <Form.Control
+          type="text"
+          placeholder="Add Item"
+          name="item"
+          value={props.item}
+          onChange={props.changeText}
+        />
+        <h6>Select Category</h6>
+        <select
+          name="dropDownValue"
+          id="dropDown"
+          value={props.dropDownValue}
+          onChange={props.changeValue}
+        >
+          {props.categories.length > 0
+            ? props.categories.map((category) => {
+                return (
+                  <option key={category.id}>
+                    {category.id + " " + category.category_name}
+                  </option>
+                );
+              })
+            : ""}
+        </select>
+      </header>
       <Button id="addItemButt" onClick={props.handleSave}>
         Add Item
       </Button>
-
-      <select
-        name="dropDownValue"
-        id="dropDown"
-        value={props.dropDownValue}
-        onChange={props.changeValue}
-      >
-        {props.categories.length > 0
-          ? props.categories.map((category) => {
-              return (
-                <option key={category.id}>
-                  {category.id + " " + category.category_name}
-                </option>
-              );
-            })
-          : ""}
-      </select>
-    </header>
+    </div>
   );
 }
 
