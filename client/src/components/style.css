@@ -22,11 +22,16 @@ body {
   background-color: rgb(142, 142, 142);
 }
 div.row {
-  text-align: center;
+  text-align: left;
   justify-content: center;
   align-items: center;
-  align-content: space-around;
 }
 .form-control {
   margin-bottom: 20px;
+}
+.checkBox {
+  padding-left: 20px;
+}
+.indItem {
+  margin: auto;
 }

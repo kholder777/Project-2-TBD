@@ -3,7 +3,7 @@ import "./style.css";
 import API from "../utils/API";
 import ItemBar from "./itemBar";
 import { Container } from "react-bootstrap";
-import items from "../utils/API";
+// import items from "../utils/API";
 function Department() {
   const [result, setResult] = useState([{ id: 1, items_name: "toothpaste" }]);
   useEffect(() => {
