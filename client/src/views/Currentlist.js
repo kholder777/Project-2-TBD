@@ -4,7 +4,6 @@ import Department from "../components/department";
 import Auth0ProviderWithHistory from "../auth0-provider-with-history";
 import API from "../utils/API";
 import { useAuth0 } from "@auth0/auth0-react";
-// import ItemBar from "../components/itemBar";
 
 function Currentlist() {
   const { user } = useAuth0();
