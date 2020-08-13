@@ -10,8 +10,9 @@ Welcome to **Project 2!** This is yet another important milestone in your full-s
 
 ```
 As a Shopper
-I want to keep track of my current home inventory
-So that I can limit my time at the grocery store (Cov-ID)
+I want to keep an ongoing grocery list
+So that I can shop efficiently
+
 ```
 
 ## 💡 MVP
@@ -19,7 +20,6 @@ So that I can limit my time at the grocery store (Cov-ID)
 - Select From Drop down categories of new item
 - Pull Up a grocery list by category and add all it items
 - Easily Add or Remove from Shopping List to Completed(Inventory/ Necessity or User Defined )
-- Timer for Predictably used items
 
 ## 🔥 Nice To Haves
 
@@ -27,6 +27,7 @@ So that I can limit my time at the grocery store (Cov-ID)
 - UPC Scanner
 - Pool Nearby Prices
 - Frequently Bought (Suggested based on frequency)
+- Timer for Predictably used items
 
 ## ⚓ Minimum Requirements
 
@@ -68,31 +69,50 @@ So that I can limit my time at the grocery store (Cov-ID)
 
   - Links to to the deployed application and the GitHub repository
 
-- **Visual Representation**:
+## 🌟 Visuals & Diagrams:
 
-    <details>
-    <summary>🌟 Wireframes (click to view/collapse)</summary>
-    1 of 1
-    <img src="./Assets/schema.png">
-    </details>
+<details>
+<summary>WireFrame Diagram (click to view/collapse)</summary>
+1 of 4
+<img src="Assets/Project2_callbackCats.PNG">
+</details>
+<details>
+<summary>Swimlane Diagram (click to view/collapse)</summary>
+2 of 4
+<img src="Assets/ImgSwimLine.png">
+</details>
+<details>
+<summary>Database Schema Diagram (click to view/collapse)</summary>
+3 of 4
+<img src="Assets/ImgSchema.png">
+</details>
+<details>
+<summary>Components Diagram (click to view/collapse)</summary>
+4 of 4
+<img src="Assets/ImgComponents.png">
+</details>
 
 ## 📦 Setup and Instructions
 
-- TBD [LiveLink](deployed Heroku link).
+> ### Live Link : [BagIt](https://bagit-and-tagit.herokuapp.com/)
 
 ### Tools & Packages
 
-> - Used [Express](https://expressjs.com/) Express is a minimal and flexible Node.js web application framework.
+> Used [Express](https://expressjs.com/) Express is a minimal and flexible Node.js web application framework.
 >
-> - Used [MySQL](https://www.npmjs.com/package/mysql) NPM package to connect to your MySQL database and perform queries.
+> Used [MySQL](https://www.npmjs.com/package/mysql) NPM package to connect to your MySQL database and perform queries.
 >
-> - Used [Sequelize](https://sequelize.org/) Promise-based Node.js ORM for Postgres, MySQL.
+> Used [Sequelize](https://sequelize.org/) Promise-based Node.js ORM for Postgres, MySQL.
 >
-> - Used [React.js](https://reactjs.org/) Open-source JavaScript library for building user interfaces.
+> Used [React.js](https://reactjs.org/) Open-source JavaScript library for building user interfaces.
+>
+> Used [React Bootstrap](https://react-bootstrap.github.io/) Open-source JavaScript library for customizing React.
+>
+> Used [Auth0](https://auth0.com/) A secure login platform.
 
 ## 📽️ The following animation demonstrates the application's functionality:
 
-![Employee Tracker](Assets/employee-tracker.gif)
+![Employee Tracker](Assets/BagItDemo.gif)
 
 ## <img src="Assets/settings.gif" width="30px"> Contributor(s)
 
